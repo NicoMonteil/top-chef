@@ -58,7 +58,7 @@ async function WriteJSON()
     let postCode = $(".postal-code").first().text().trim();
     json.postCode = postCode;
 
-    fs.appendFile('output.json', JSON.stringify(json)+"\r\n", function(err){
+    fs.appendFile('output2.json', JSON.stringify(json)+",\r\n", function(err){
         console.log('copy in output.json' + ' page: ' +  String(json.title));
       });
   }
